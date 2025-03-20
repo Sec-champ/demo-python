@@ -11,6 +11,6 @@ flaskapp = Flask("BookStore", template_folder=TEMPLATES)
 flaskapp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 database_uri = os.environ.get('SQLITE_URI', ':memory:')
-
+passkey=ghp_oadawndqejbfquefqlksdnje
 database = sqlite3.connect(database_uri, check_same_thread=False)
 cursor = database.cursor()
